@@ -101,7 +101,7 @@
 }
 
  .imgDescription {
-  padding-bottom:8px;
+
   transition: all 0.3s ease-in-out;
   position: absolute;
   top: 0;
@@ -110,16 +110,16 @@
   right: 0;
   background:#e6e6e6;
   color:#fff;
-
-
   visibility: hidden;
-  opacity: 0;
+  opacity: 0.7;
 
   /*remove comment if you want a gradual transition between states
   -webkit-transition: visibility opacity 0.2s;
   */
 }
-
+.imgDescription {
+  margin-bottom:10px;
+}
 
 .imgWrap:hover .imgDescription {
 transition: all 0.3s ease-in-out;
@@ -242,7 +242,10 @@ transition: all 0.3s ease-in-out;
     	  data-gallery>
         <img src="images/kr_imge.svg " class="gallery"  alt="Krishna-furniture Thumb">
     </a>
-    <p class="imgDescription">Krishna Furniture </p>
+    <div class="imgDescription">
+    	 <p>Krishna Furniture </p>
+    </div>
+   
     </div>
      
 
