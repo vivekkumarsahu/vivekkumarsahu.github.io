@@ -101,14 +101,14 @@
 }
 
  .imgDescription {
-
+   transform: scale(1.1);
   transition: all 0.3s ease-in-out;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background:#e6e6e6;
+  background:#d9d9d9;
   color:#fff;
   visibility: hidden;
   opacity: 0.7;
@@ -117,11 +117,12 @@
   -webkit-transition: visibility opacity 0.2s;
   */
 }
-.imgDescription p {
+ #pro_name{
   margin-bottom:10px;
 }
 
 .imgWrap:hover .imgDescription {
+  transform: scale(1.1);
 transition: all 0.3s ease-in-out;
   visibility: visible;
   opacity: 0.6;
@@ -243,7 +244,7 @@ transition: all 0.3s ease-in-out;
         <img src="images/kr_imge.svg " class="gallery"  alt="Krishna-furniture Thumb">
     </a>
     <div class="imgDescription">
-    	 <p>Krishna Furniture </p>
+    	 <p id="pro_name">Krishna Furniture </p>
     </div>
    
     </div>
