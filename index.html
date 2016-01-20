@@ -94,7 +94,35 @@
  	width:150px;
  	outline:none;
  }
- 
+ .imgWrap {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+
+ imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+
+
+  visibility: hidden;
+  opacity: 0;
+
+  /*remove comment if you want a gradual transition between states
+  -webkit-transition: visibility opacity 0.2s;
+  */
+}
+
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
  
   </style>
 </head>
@@ -206,10 +234,14 @@
   
 <div id="links">  
  
-    
-       <a href="images/kr_imge.svg"  title="My First project" data-gallery>
+    <div class="imgWrap">
+    	  <a href="images/kr_imge.svg"  title="This Website basically shows Krishna Furniture portfolio<br>website address is :www.krishnafurniturejsr.in"
+    	  data-gallery>
         <img src="images/kr_imge.svg " class="gallery"  alt="Krishna-furniture Thumb">
     </a>
+    <p class="imgDescription">Krishna Furniture </p>
+    </div>
+     
 
    
     <a href="birds1.jpg" title="Apple" data-gallery>
